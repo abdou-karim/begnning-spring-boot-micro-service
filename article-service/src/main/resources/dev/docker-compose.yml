@@ -1,0 +1,17 @@
+version: "3.5"
+
+services:
+  moduleParent:
+    container_name: articlesService
+    #image source pour le conteneur
+    image: postgres:latest
+    #permet de spécifier le point de montage entre le système hôte et les conteneurs
+    volumes:
+      - $HOME/aks_S_P_M_Service/db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: aks-password
+      POSTGRES_DB: articles-service-db
+      POSTGRES_USER: aks-user
+    #permet de definir les ports disponibles entre la machine host et le conteneur
+    ports:
+      - "5434:5432"
