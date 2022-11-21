@@ -21,6 +21,7 @@
 		<module>registery-service</module>
 		<module>gateway-service</module>
 		<module>article-service</module>
+		<module>sale-servie</module>
 	</modules>
 
 	<properties>
