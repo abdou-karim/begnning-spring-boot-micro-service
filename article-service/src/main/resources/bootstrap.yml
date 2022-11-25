@@ -1,7 +1,18 @@
+app:
+  message: Message has been sent successfuly
 spring:
   application:
     name: article-service
   cloud:
     config:
       uri: http://localhost:1111
+  rabbitmq:
+    host: localhost
+    password: guest
+    port: 15672
+    username: guest
+    exchange: articles.exchange
+    queue: articles.queue
+    routingkey: articles.routingkey
+
 

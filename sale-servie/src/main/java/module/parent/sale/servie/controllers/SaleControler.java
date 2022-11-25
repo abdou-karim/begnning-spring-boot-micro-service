@@ -15,6 +15,6 @@ public class SaleControler {
         this.articleService = articleService;
     }
 
-    @GetMapping("/articles")
+    @GetMapping("/sale/articles")
     List<ArticlesDto> getAllArticles(){return this.articleService.findAll();}
 }
