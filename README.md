@@ -10,6 +10,7 @@ In the root of the project there is a folder rabbitmq-docker opened it and typed
 ````
 docker-compose up -d
 ````
+this command allows to turn on the rabbitmq server
 
 after that turn on the services one by one.  
 ````
