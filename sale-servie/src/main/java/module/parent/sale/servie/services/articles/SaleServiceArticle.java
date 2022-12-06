@@ -4,6 +4,6 @@ import module.parent.sale.servie.dto.ArticlesDto;
 
 import java.util.List;
 
-public interface ArticleService {
+public interface SaleServiceArticle {
     List<ArticlesDto> findAll();
 }

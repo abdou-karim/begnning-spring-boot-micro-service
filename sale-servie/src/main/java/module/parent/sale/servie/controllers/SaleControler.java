@@ -1,7 +1,7 @@
 package module.parent.sale.servie.controllers;
 
 import module.parent.sale.servie.dto.ArticlesDto;
-import module.parent.sale.servie.services.articles.ArticleService;
+import module.parent.sale.servie.services.articles.SaleServiceArticle;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,9 +9,9 @@ import java.util.List;
 
 @RestController
 public class SaleControler {
-    private final ArticleService articleService;
+    private final SaleServiceArticle articleService;
 
-    SaleControler(ArticleService articleService){
+    SaleControler(SaleServiceArticle articleService){
         this.articleService = articleService;
     }
 
