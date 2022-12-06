@@ -4,11 +4,13 @@ Open the project, more precisely *article-service* in the *resource folder*: ope
 ````
 ./start-db.sh
 ````      
+This command will allow you to mount your PostgreSQL database.  
+
 In the root of the project there is a folder rabbitmq-docker opened it and typed the command:
 ````
 docker-compose up -d
 ````
-This command will allow you to mount your PostgreSQL database.  
+
 after that turn on the services one by one.  
 ````
 1-> config-service
